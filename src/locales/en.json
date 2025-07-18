@@ -1,0 +1,378 @@
+{
+  "login_title": "Login to Your Account",
+  "login_subtitle": "Smart Waste Management Portal",
+  "email": "Email",
+  "password": "Password",
+  "login_button": "Login",
+  "no_account": "Don't have an account?",
+  "register_here": "Register",
+  "login_success":"Login successful!",
+  "login_error":"Login failed. Please check your credentials.",
+
+
+  "title": "Smart Waste Tracker",
+  "nav": {
+    "home": "Home",
+    "admin": "Admin",
+    "user": "User",
+    "driver": "Driver"
+  },
+  "home": {
+    "heading": "Welcome to the Tracking Garbage Collection and Retrieving System",
+    "description": "Our platform empowers citizens to request pickups, raise complaints, and track waste collection in real-time. Admins and drivers have dedicated dashboards to streamline operations. Empowering citizens, streamlining operations, and keeping our cities clean with real-time waste tracking."
+  },
+  "footer": {
+    "office": "Smart Waste Management Office",
+    "address": "123 Eco Street, Clean City, India - 600001",
+    "contact": "Contact: +91 98765 43210 | ✉️ support@wastetrack.in"
+  },
+
+  "register_title": "Create an Account",
+  "register_subtitle": "Smart Waste Management Portal",
+  "full_name": "Full Name",
+  "role": "Role",
+  "user": "User",
+  "driver": "Driver",
+  "register_button": "Register",
+  "already_account": "Already have an account?",
+  "login_here": "Login",
+  "register_success": "Registration successful!",
+"register_failed": "Registration failed. Try again.",
+
+"not_found_title": "404 - Page Not Found",
+"choose_language": "Choose language",
+
+"admin_dashboard": {
+    "welcome": "Welcome, {{name}}",
+    "logout": "Logout",
+    "dashboard_metrics": "Dashboard Metrics",
+    "manage_users": "Manage Users & Drivers",
+    "assign_pickups": "Assign Pickups",
+    "pickup_status": "Pickup Status",
+    "view_complaints": "View Complaints",
+    "send_alerts": "Send Alerts",
+    "send_email": "Send Email Notification"
+  },
+
+  "admin_metrics": {
+    "heading": "Admin Dashboard Metrics",
+    "loading": "Loading metrics...",
+    "total_pickups": "Total Pickup Requests",
+    "completed_pickups": "Completed Pickups",
+    "pending_pickups": "Pending Pickups",
+    "total_complaints": "Total Complaints",
+    "resolved_complaints": "Resolved Complaints",
+    "unresolved_complaints": "Unresolved Complaints"
+  },
+
+  "pickup_status": {
+    "heading": "📊 Admin Dashboard — Pickup & Complaint Status",
+    "pickup_title": "🚛 Pickup Requests",
+    "no_pickups": "No pickup requests available.",
+    "category": "Category",
+    "urgency": "Urgency",
+    "status": "Status",
+    "assigned_driver": "Assigned Driver",
+    "not_assigned": "Not Assigned",
+    "date": "Date",
+    "user_uploaded": "📤 User Uploaded",
+    "completed_by_driver": "✅ Completed by Driver",
+    "complaint_title": "🛠️ Complaint Tasks",
+    "no_complaints": "No complaints submitted.",
+    "user": "User",
+    "description": "Description",
+    "location": "Location",
+    "resolved_image": "✅ Resolved Image",
+    "labels": {
+    "Wet Waste": "Wet Waste",
+    "Dry Waste": "Dry Waste",
+    "Hazardous Waste": "Hazardous Waste",
+    "Normal": "Normal",
+    "High": "High",
+    "Pending": "Pending",
+    "Completed": "Completed",
+    "Resolved": "Resolved",
+    "assigned":"Assigned",
+    "missed_pickup": "Missed Pickup",
+    "improper_handling": "Improper Handling",
+    "other": "Other"
+  }
+  },
+
+  "send_alert": {
+    "title": "Send Alert",
+    "message_placeholder": "Enter your alert message...",
+    "send_to": "Send To:",
+    "all": "All",
+    "specific_user": "Specific User",
+    "specific_driver": "Specific Driver",
+    "select_recipient": "Select Recipient:",
+    "select_option": "-- Select --",
+    "button": "Send Alert",
+    "success": "Alert sent!",
+    "error": "Failed to send alert."
+  },
+
+  "assign_pickup": {
+    "title": "Assign Pickups to Drivers",
+    "no_pickups": "No unassigned pickups found.",
+    "category": "Category",
+    "urgency": "Urgency",
+    "date": "Date",
+    "user_image": "📷 User Uploaded Image:",
+    "assign_driver": "Assign Driver",
+    "select_driver": "-- Select Driver --",
+    "success": "Driver assigned successfully!",
+    "labels":{
+      "Wet Waste": "Wet Waste",
+    "Dry Waste": "Dry Waste",
+    "Hazardous Waste": "Hazardous Waste",
+    "Normal": "Normal",
+    "High": "High"
+    }
+  },
+
+  "email_notification": {
+    "title": "Send Email Notification",
+    "recipient": "Recipient",
+    "select_recipient": "Select recipient",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Email",
+    "success": "Email sent successfully!",
+    "error": "Failed to send email"
+  },
+
+  "manage_users": {
+    "title": "Manage Users & Drivers",
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "actions": "Actions",
+    "edit": "Edit",
+    "delete": "Delete",
+    "edit_user": "Edit User",
+    "placeholder_name": "Name",
+    "placeholder_email": "Email",
+    "update": "Update",
+    "confirm_delete": "Delete this user?"
+  },
+
+  "view_complaints": {
+    "title": "🛠️ All User Complaints",
+    "no_complaints": "No complaints found.",
+    "complaint_type": "Complaint",
+    "user": "User",
+    "description": "Description",
+    "location": "📍 Location",
+    "status": "Status",
+    "assign_driver_label": "Assign Driver:",
+    "select_driver": "-- Select Driver --",
+    "assigned_to": "🚛 Assigned to",
+    "mark_resolved": "✅ Mark Resolved",
+    "reject": "❌ Reject",
+    "success":"Driver assigned successfully!",
+    "error":"Failed to assign driver",
+    "labels": {
+    "Pending": "Pending",
+    "Completed": "Completed",
+    "Resolved": "Resolved",
+    "missed_pickup": "Missed Pickup",
+    "improper_handling": "Improper Handling",
+    "other": "Other"
+  }
+  },
+
+  "assigned_pickups": {
+    "title": "🚛 Assigned Pickups",
+    "no_pickups": "No pickups assigned.",
+    "location": "Location",
+    "category": "Category",
+    "urgency": "Urgency",
+    "status": "Status",
+    "user_uploaded_image": "User Uploaded Image",
+    "mark_completed": "✅ Mark as Completed",
+    "complaints_title": "📢 Assigned Complaints",
+    "no_complaints": "No complaints assigned.",
+    "type": "Type",
+    "description": "Description",
+    "complaint_image": "User Complaint Image",
+    "mark_resolved": "🛠️ Mark as Resolved",
+    "success":"Complaint marked as Resolved!",
+    "error":"Failed to update complaint status",
+    "suc":"Pickup marked as completed!",
+    "err":"Failed to update pickup status",
+    "upload_proof": "Upload proof image",
+  "choose_file": "Choose file",
+   "labels": {
+    "Wet Waste": "Wet Waste",
+    "Dry Waste": "Dry Waste",
+    "Hazardous Waste": "Hazardous Waste",
+    "Normal": "Normal",
+    "High": "High",
+    "Pending": "Pending",
+    "Completed": "Completed",
+    "Resolved": "Resolved",
+    "assigned":"Assigned",
+    "missed_pickup": "Missed Pickup",
+    "improper_handling": "Improper Handling",
+    "other": "Other"
+  }
+  },
+  "driver_dashboard": {
+    "welcome": "Welcome,",
+    "logout": "Logout",
+    "assigned_pickups": "Assigned Pickups",
+    "task_history": "Task History",
+    "edit_profile": "Edit Profile"
+  },
+
+  "driver_edit_profile": {
+    "title": "✏️ Edit Profile",
+    "full_name": "Full Name",
+    "email_address": "Email Address",
+    "new_password": "New Password (Optional)",
+    "password_placeholder": "Leave blank to keep current password",
+    "save_changes": "Save Changes",
+    "success": "Profile updated!",
+    "error": "Update failed"
+  },
+
+  "driver_pickup_history": {
+    "completed_pickups": "📦 Completed Pickups",
+    "no_completed_pickups": "No completed pickups found.",
+    "category": "Category",
+    "urgency": "Urgency",
+    "status": "Status",
+    "user_image": "User Image",
+    "completed_image": "Completed Image",
+    "resolved_complaints": "🛠️ Resolved Complaints",
+    "no_resolved_complaints": "No resolved complaints found.",
+    "description": "Description",
+    "location": "Location",
+    "resolution_image": "Resolution Image",
+    "labels": {
+    "Wet Waste": "Wet Waste",
+    "Dry Waste": "Dry Waste",
+    "Hazardous Waste": "Hazardous Waste",
+    "Normal": "Normal",
+    "High": "High",
+    "Pending": "Pending",
+    "Completed": "Completed",
+    "Resolved": "Resolved",
+    "missed_pickup": "Missed Pickup",
+    "improper_handling": "Improper Handling",
+    "other": "Other"
+  }
+  },
+  "complaint_history": {
+    "title": "📄 Your Complaint History",
+    "no_complaints": "No complaints found.",
+    "type": "Type",
+    "description": "Description",
+    "location": "Location",
+    "status": "Status",
+    "pending": "Pending",
+     "resolved": "Resolved",
+    "rejected": "Rejected",
+    "date": "Date",
+    "image_alt": "Complaint",
+    "labels": {
+    "missed_pickup": "Missed Pickup",
+    "improper_handling": "Improper Handling",
+    "other": "Other"
+  }
+  },
+  "edit_profile": {
+    "title": "Edit Profile",
+    "full_name": "Full Name",
+    "email_address": "Email Address",
+    "new_password": "New Password (optional)",
+    "save_changes": "Save Changes",
+    "update_success": "Profile updated successfully",
+    "update_error": "Failed to update profile"
+  },
+
+  "pickup_request": {
+    "title": "Submit Garbage Pickup Request",
+    "pickup_location": "Pickup Location",
+    "waste_category": "Waste Category",
+    "urgency_level": "Urgency Level",
+    "upload_photo": "Upload Waste Photo",
+    "submit": "Submit Request",
+    "success": "Pickup request submitted successfully",
+    "error": "Failed to submit request",
+    "not_logged_in": "User not logged in",
+    "wet_waste": "Wet Waste",
+    "dry_waste": "Dry Waste",
+    "hazardous_waste": "Hazardous Waste",
+    "urgency_normal": "Normal",
+    "urgency_high": "High",
+    "no_file_chosen": "No file chosen"
+  },
+
+  "pickup_status_user": {
+    "title": "My Pickup Requests",
+    "no_requests": "No pickup requests found.",
+    "submitted": "Submitted",
+    "category": "Category",
+    "urgency": "Urgency",
+    "status": "Status",
+    "pending": "Pending",
+    "completed": "Completed",
+    "rejected": "Rejected",
+    "error_loading": "Failed to load pickup status",
+    "labels": {
+    "Wet Waste": "Wet Waste",
+    "Dry Waste": "Dry Waste",
+    "Hazardous Waste": "Hazardous Waste",
+    "Normal": "Normal",
+    "High": "High",
+    "Pending": "Pending",
+    "Completed": "Completed",
+    "Resolved": "Resolved",
+    "assigned":"Assigned",
+    "missed_pickup": "Missed Pickup",
+    "improper_handling": "Improper Handling",
+    "other": "Other"
+  }
+  },
+
+  "raise_complaint": {
+    "title": "📝 Raise a Complaint",
+    "complaint_type": "Complaint Type",
+    "missed_pickup": "Missed Pickup",
+    "improper_handling": "Improper Handling",
+    "other": "Other",
+    "description": "Description",
+    "select_location": "Select Location",
+    "enter_address": "Enter address manually if needed",
+    "upload_photo": "Upload Photo (optional)",
+    "submit_btn": "Submit Complaint",
+    "success": "Complaint submitted successfully",
+    "fail": "Failed to submit complaint",
+    "not_logged_in": "User not logged in",
+    "no_file_chosen": "No file chosen"
+  },
+
+  "user_dashboard": {
+    "welcome": "Welcome,",
+    "logout": "Logout",
+    "request_pickup": "Request Pickup",
+    "pickup_status": "Pickup Status",
+    "raise_complaint": "Raise Complaint",
+    "complaint_history": "Complaint History",
+    "edit_profile": "Edit Profile"
+  },
+
+  "map_picker": {
+    "label": "Select Location on Map"
+  },
+
+  "user_alerts": {
+    "title": "Notifications",
+    "mark_read": "Mark all as read",
+    "no_alerts": "No new alerts."
+  }
+
+}
