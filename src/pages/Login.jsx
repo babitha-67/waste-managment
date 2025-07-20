@@ -1,11 +1,15 @@
 // Login.jsx
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
+import { AuthContext } from "../authprovider";
 
-export default function Login() {
+
+
+export default function Login() {  
+  const { login } = useContext(AuthContext);
   const [formData, setFormData] = useState({ email: "", password: "" });
   const navigate = useNavigate();
    const { t, i18n } = useTranslation();
@@ -14,24 +18,21 @@ export default function Login() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+ const handleSubmit = async (e) => {
   e.preventDefault();
   try {
     const res = await axios.post("https://smart-waste-lg2y.onrender.com/api/auth/login", formData);
-    localStorage.setItem("token", res.data.token);
-    localStorage.setItem("user", JSON.stringify(res.data.user));
-
+    login(res.data.user, res.data.token); // update context and localStorage
     toast.success(t('login_success'));
-
     const role = res.data.user.role;
-      setTimeout(() => {
-        if (role === "admin") navigate("/admin");
-        else if (role === "driver") navigate("/driver");
-        else navigate("/user");
-      }, 1500); // Delay redirect so toast is visible
-    } catch (err) {
-      toast.error(t('login_error'));
-    }
+    setTimeout(() => {
+      if (role === "admin") navigate("/admin");
+      else if (role === "driver") navigate("/driver");
+      else navigate("/user");
+    }, 1500);
+  } catch (err) {
+    toast.error(t('login_error'));
+  }
 };
 
 const changeLanguage = (lang) => i18n.changeLanguage(lang);

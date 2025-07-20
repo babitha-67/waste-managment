@@ -1,5 +1,5 @@
 // src/App.jsx
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -32,14 +32,16 @@ import AdminPickupStatus from "./pages/Admin/AdminPickupStatus";
 import AdminSendAlert from "./pages/Admin/AdminSendAlert";
 import EmailNotification from "./pages/Admin/EmailNotification";
 import Layout from "./components/Layout";
+import { AuthContext } from "./authprovider";
+
 
 function App() {
-  const [user, setUser] = useState(null);
+  const { user, authLoading } = useContext(AuthContext); // <-- get from context
 
-  useEffect(() => {
-    const storedUser = JSON.parse(localStorage.getItem("user"));
-    setUser(storedUser);
-  }, []);
+  if (authLoading) {
+    // Show a loading spinner or message while auth state is loading
+    return <div>Loading...</div>;
+  }
 
   return (
     <Router>
