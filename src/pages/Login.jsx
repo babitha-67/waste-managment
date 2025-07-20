@@ -4,11 +4,10 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
-import { AuthContext } from "../authprovider";
+import { AuthContext } from "../AuthProvider";
 
 
-
-export default function Login() {  
+export default function Login() {
   const { login } = useContext(AuthContext);
   const [formData, setFormData] = useState({ email: "", password: "" });
   const navigate = useNavigate();

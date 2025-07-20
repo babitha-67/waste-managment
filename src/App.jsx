@@ -32,8 +32,7 @@ import AdminPickupStatus from "./pages/Admin/AdminPickupStatus";
 import AdminSendAlert from "./pages/Admin/AdminSendAlert";
 import EmailNotification from "./pages/Admin/EmailNotification";
 import Layout from "./components/Layout";
-import { AuthContext } from "./authprovider";
-
+import { AuthContext } from "./AuthProvider";
 
 function App() {
   const { user, authLoading } = useContext(AuthContext); // <-- get from context
